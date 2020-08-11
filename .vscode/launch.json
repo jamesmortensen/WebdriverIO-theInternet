@@ -1,0 +1,40 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            // It's normal to see the wdio.debug.conf.js loaded twice. See
+            // https://github.com/webdriverio/webdriverio/issues/1500 
+            // for explanation.
+            "type": "node",
+            "request": "launch",
+            "name": "Launch WebdriverIO Tests",
+            "port": 9229,
+            "timeout": 60000,
+            "program": "${workspaceRoot}/node_modules/.bin/wdio",
+            "cwd": "${workspaceRoot}",
+            "console": "internalConsole",
+            "args": [
+                "wdio.debug.conf.js"
+            ]
+        },
+        {
+            // It's normal to see the wdio.debug.conf.js loaded twice. See
+            // https://github.com/webdriverio/webdriverio/issues/1500 
+            // for explanation.
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Local WebdriverIO Tests",
+            "port": 9229,
+            "timeout": 60000,
+            "program": "${workspaceRoot}/node_modules/.bin/wdio",
+            "cwd": "${workspaceRoot}",
+            "console": "internalConsole",
+            "args": [
+                "_wdio.localhost.conf.js"
+            ]
+        },
+    ]
+}
